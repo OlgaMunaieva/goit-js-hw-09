@@ -9,7 +9,7 @@ const bodyEl = document.querySelector('body');
 let timerId = null;
 
 /**
- *by clicking on the start button makes it inactive, and the stop button is active, launches the function of randomly obtaining a color and sets it to the body
+ *by clicking on the start button makes it inactive, and the stop button is active, launches the function of randomly obtaining a color and setting it on the body every second
  */
 buttonStart.addEventListener('click', () => {
   buttonStart.disabled = true;
@@ -20,6 +20,9 @@ buttonStart.addEventListener('click', () => {
   );
 });
 
+/**
+ *by clicking on the stop button makes it inactive, and the start button is active, stops the function of randomly obtaining a color and setting it on the body every second
+ */
 buttonStop.addEventListener('click', () => {
   buttonStart.disabled = false;
   buttonStop.disabled = true;
