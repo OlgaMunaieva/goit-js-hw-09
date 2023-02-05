@@ -24,7 +24,6 @@ const options = {
     buttonStart.disabled = true;
     if (selectedDates[0] <= new Date()) {
       Notiflix.Notify.failure('Please choose a date in the future');
-      // window.alert('Please choose a date in the future');
     } else {
       buttonStart.disabled = false;
     }
@@ -33,7 +32,7 @@ const options = {
 
 const calendar = flatpickr('#datetime-picker', options);
 
-let timerId;
+let intervalId;
 
 buttonStart.disabled = true;
 
