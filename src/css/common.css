@@ -44,3 +44,26 @@ button {
   width: 70px;
   height: 30px;
 }
+
+.form {
+  /* width: 1200px; */
+  display: flex;
+  gap: 10px
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  margin-right: 10px;
+}
+
+.form input {
+  width: 200px;
+}
+
+.form>button {
+  display: inline;
+  margin-top: 30px;
+  width: 150px;
+}
